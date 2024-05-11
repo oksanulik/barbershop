@@ -1,0 +1,161 @@
+:root {
+  --accent-color: #ff6c00;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(22, 175, 192, 0.536);
+}
+/* body {
+  margin: 0;
+} */
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style-type: none;
+}
+/* =============================================Components========== */
+
+/* ============================================/Components========== */
+
+/* =============================================Header============== */
+.page-header {
+}
+.page-nav {
+}
+.logo {
+}
+.link {
+}
+.logo-img {
+}
+.menu {
+}
+.list {
+}
+.menu-item {
+}
+.menu-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+.contact-phone {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.contact-phone:hover,
+.contact-phone:focus {
+  color: var(--accent-color);
+}
+.modal-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: transparent;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+/* ============================================/Header============== */
+
+/* =============================================Hero================ */
+.hero {
+}
+.hero-left-side {
+}
+.media-list {
+}
+.list {
+}
+.media-list-item {
+}
+.media-list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.media-list-link:hover,
+.media-list-link:focus {
+  color: var(--accent-color);
+}
+.link {
+}
+.hero-right-side {
+}
+.suptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.suptitle-theme-dark {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.suptitle-theme-light {
+  color: #303030;
+}
+
+.hero-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.section-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/* ============================================/Hero================ */
+
+/* =============================================About=============== */
+/* ============================================/About=============== */
+
+/* =============================================Prices============== */
+/* ============================================/Prices============== */
+
+/* =============================================Advantages========== */
+/* ============================================/Advantages========== */
+
+/* =============================================Team================ */
+/* ============================================/Team================ */
+
+/* =============================================Examples============ */
+/* ============================================/Examples============ */
+
+/* =============================================Online-booking====== */
+/* ============================================/Online-booking====== */
+
+/* =============================================Contacts============ */
+/* ============================================/Contacts============ */
+
+/* =============================================Footer============== */
+/* ============================================/Footer============== */
+
+/* address font-style: normal*/
