@@ -20,45 +20,43 @@ body {
 /* ============================================/Components========== */
 
 /* =============================================Header============== */
-.page-header {
+.header {
 }
-.page-nav {
+.header-nav {
+}
+.header-logo {
 }
 .logo {
 }
-.link {
+.header-img {
 }
-.logo-img {
+.header-list {
 }
-.menu {
+.header-item {
 }
-.list {
-}
-.menu-item {
-}
-.menu-link {
+.header-link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: #ffffff;
 }
-.menu-link:hover,
-.menu-link:focus {
+.header-link:hover,
+.header-link:focus {
   color: var(--accent-color);
 }
-.contact-phone {
+.header-contact {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: #ffffff;
 }
-.contact-phone:hover,
-.contact-phone:focus {
+.header-contact:hover,
+.header-contact:focus {
   color: var(--accent-color);
 }
-.modal-btn {
+.header-btn {
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -69,8 +67,8 @@ body {
   color: #ffffff;
   background-color: transparent;
 }
-.modal-btn:hover,
-.modal-btn:focus {
+.header-btn:hover,
+.header-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
