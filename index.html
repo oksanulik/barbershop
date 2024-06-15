@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!------------------------------------------Header done-->
+    <!-------------------- Header -->
     <header class="header">
       <nav class="header-nav">
         <a class="header-logo logo link" href="">
@@ -30,7 +30,7 @@
             <a class="header-link link" href="#about">About</a>
           </li>
           <li class="header-item">
-            <a class="header-link link" href="#prices">Services and prices</a>
+            <a class="header-link link" href="#price">Services and prices</a>
           </li>
           <li class="header-item">
             <a class="header-link link" href="#team">Barbers</a>
@@ -43,10 +43,10 @@
       <a class="header-contact link" href="tel:+380441111111"
         >+38 044 111 11 11</a
       >
-      <button class="header-btn" type="button">Online-booking</button>
+      <button class="modal-btn btn" type="button">Online-booking</button>
     </header>
     <main>
-      <!------------------------------------------Hero -->
+      <!-------------------- Hero -->
       <section class="hero">
         <div class="hero-left-side">
           <ul class="media-list list">
@@ -72,11 +72,11 @@
           </ul>
         </div>
         <div class="hero-right-side">
-          <p class="suptitle suptitle-theme-dark">
+          <p class="uppertitle uppertitle-theme-dark">
             A hair salon for men in Kyiv
           </p>
           <h1 class="hero-title">BarberShop</h1>
-          <p class="section-description">
+          <p class="hero-description">
             We are experts in trendy men’s haircuts. We work quickly, carefully
             and with style.
           </p>
@@ -86,19 +86,21 @@
           </ul> -->
         </div>
       </section>
-      <!------------------------------------------About -->
-      <section id="about">
-        <ul class="list">
-          <li>
+      <!-------------------- About -->
+      <section class="about" id="about">
+        <ul class="about-list list">
+          <li class="about-item">
             <img
+              class="about-img img"
               src="./images/about/img-1.jpg"
               alt="Beard trim"
               width="270"
               height="445"
             />
           </li>
-          <li>
+          <li class="about-item">
             <img
+              class="about-img"
               src="./images/about/img-2.jpg"
               alt="Straight razor shave"
               width="270"
@@ -106,43 +108,44 @@
             />
           </li>
         </ul>
-        <p class="suptitle suptitle-theme-light">About</p>
-        <h2>Best Barbershop in your city</h2>
-
-        <p>
+        <p class="uppertitle uppertitle-theme-light">About</p>
+        <h2 class="about-text">Best Barbershop in your city</h2>
+        <p class="about-undertitle">
           If you want to add more confidence to your image, you should
           definitely visit us.
         </p>
-        <p>
+        <p class="about-descr">
           We are a team that never stops at what has been achieved and are
           thirsty for changes. And when you fall into the hands of our master,
           you will never be the same again. We are a team that is always "on the
           same wave" with clients. Therefore, we are always ready to improve
           everyone who comes to us!
         </p>
-        <button type="button">Online-booking</button>
+        <button class="modal-btn btn" type="button">Online-booking</button>
       </section>
-      <!------------------------------------------Prices -->
-      <section id="prices">
-        <p class="suptitle suptitle-theme-dark">
+      <!-------------------- Price -->
+      <section class="price" id="price">
+        <p class="uppertitle uppertitle-theme-dark">
           Spend your time with the best masters
         </p>
-        <h2>Services and prices</h2>
-        <ul class="list">
-          <li>
-            <ul class="list">
-              <li>Men’s haircut from 300 uah.</li>
-              <li>Beard trim from 300 uah.</li>
-              <li>Mustache trim from 200 uah.</li>
-              <li>Straight razor shave from 200 uah.</li>
+        <h2 class="price-text">Services and prices</h2>
+        <ul class="price-main-list list">
+          <li class="price-main-item">
+            <ul class="price-list list">
+              <li class="price-item">Men’s haircut from 300 uah.</li>
+              <li class="price-item">Beard trim from 300 uah.</li>
+              <li class="price-item">Mustache trim from 200 uah.</li>
+              <li class="price-item">Straight razor shave from 200 uah.</li>
             </ul>
           </li>
-          <li>
-            <ul class="list">
-              <li>Trainee’s haircut from 50 uah.</li>
-              <li>Haircut under the nozzle from 200 uah.</li>
-              <li>Children’s haircut (0-12 y.o.) from 300 uah.</li>
-              <li>Camouflage of gray hair from 200 uah.</li>
+          <li class="price-main-item">
+            <ul class="price-list list">
+              <li class="price-item">Trainee’s haircut from 50 uah.</li>
+              <li class="price-item">Haircut under the nozzle from 200 uah.</li>
+              <li class="price-item">
+                Children’s haircut (0-12 y.o.) from 300 uah.
+              </li>
+              <li class="price-item">Camouflage of gray hair from 200 uah.</li>
             </ul>
           </li>
         </ul>
@@ -165,44 +168,45 @@
           </tr>
         </table> -->
 
-        <button type="button">Online-booking</button>
+        <button class="modal-btn btn" type="button">Online-booking</button>
       </section>
-      <!------------------------------------------Advantages -->
-      <section>
-        <ul class="list">
-          <li>
-            <p>600 <sup>+</sup></p>
-            <p>Satisfied customers per day</p>
+      <!-------------------- Advantages -->
+      <section class="advant">
+        <ul class="advant-list list">
+          <li class="advant-item">
+            <p class="advant-quantity">600 <sup class="advant-index">+</sup></p>
+            <p class="advant-descr">Satisfied customers per day</p>
           </li>
-          <li>
-            <p>50 <sup>+</sup></p>
-            <p>Awards for excellent service</p>
+          <li class="advant-item">
+            <p class="advant-quantity">50 <sup class="advant-index">+</sup></p>
+            <p class="advant-descr">Awards for excellent service</p>
           </li>
-          <li>
-            <p>20 <sup>+</sup></p>
-            <p>Kyiv’s best barbers</p>
+          <li class="advant-item">
+            <p class="advant-quantity">20 <sup class="advant-index">+</sup></p>
+            <p class="advant-descr">Kyiv’s best barbers</p>
           </li>
-          <li>
-            <p>100 <sup>+</sup></p>
-            <p>Gifts for regular customers</p>
+          <li class="advant-item">
+            <p class="advant-quantity">100 <sup class="advant-index">+</sup></p>
+            <p class="advant-descr">Gifts for regular customers</p>
           </li>
         </ul>
-        <p class="suptitle suptitle-theme-light">Old traditional school</p>
-        <h2>Why people come to us?</h2>
-        <p>
+        <p class="uppertitle uppertitle-theme-light">Old traditional school</p>
+        <h2 class="advant-title">Why people come to us?</h2>
+        <p class="advant-undertitle">
           Only good things are said about us. But it's better to see and feel 1
           time than read 10 times.
         </p>
       </section>
-      <!------------------------------------------Team -->
+      <!-------------------- Team -->
       <section class="team" id="team">
-        <p class="suptitle suptitle-theme-light team-text">
+        <p class="uppertitle uppertitle-theme-light">
           For true enjoyers of the atmosphere
         </p>
         <h2 class="team-title">Our barbers</h2>
         <ul class="team-list list">
           <li class="team-item">
             <img
+              class="team-img img"
               src="./images/team/john-smith.jpg"
               alt="John Smith"
               width="370"
@@ -210,15 +214,16 @@
             />
             <h3 class="team-subtitle">John Smith</h3>
             <p class="team-subtext">Extreme Barber</p>
-            <ul class="list">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="team-socials list">
+              <li class="socials-list"></li>
+              <li class="socials-list"></li>
+              <li class="socials-list"></li>
+              <li class="socials-list"></li>
             </ul>
           </li>
           <li class="team-item">
             <img
+              class="team-img img"
               src="./images/team/michele-doe.jpg"
               alt="Michele Doe"
               width="370"
@@ -226,15 +231,16 @@
             />
             <h3 class="team-subtitle">Michele Doe</h3>
             <p class="team-subtext">Extreme Barber</p>
-            <ul class="list">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="team-socials list">
+              <li class="socials-list"></li>
+              <li class="socials-list"></li>
+              <li class="socials-list"></li>
+              <li class="socials-list"></li>
             </ul>
           </li>
           <li class="team-item">
             <img
+              class="team-img img"
               src="./images/team/alan-black.jpg"
               alt="Alan Black"
               width="370"
@@ -242,48 +248,52 @@
             />
             <h3 class="team-subtitle">Alan Black</h3>
             <p class="team-subtext">Extreme Barber</p>
-            <ul class="list">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="team-socials list">
+              <li class="socials-list"></li>
+              <li class="socials-list"></li>
+              <li class="socials-list"></li>
+              <li class="socials-list"></li>
             </ul>
           </li>
         </ul>
       </section>
-      <!------------------------------------------Examples -->
-      <section>
+      <!-------------------- Gallery -->
+      <section class="gallery">
         <h2 hidden>Our works</h2>
-        <p class="suptitle suptitle-theme-light">
+        <p class="uppertitle uppertitle-theme-light">
           In Latin, "barba" means "beard"
         </p>
-        <ul class="list">
-          <li>
+        <ul class="gallery-list list">
+          <li class="gallery-items">
             <img
+              class="gallery-img img"
               src="./images/examples/haircut-1.jpg"
               alt="haircut"
               width="270"
               height="360"
             />
           </li>
-          <li>
+          <li class="gallery-items">
             <img
+              class="gallery-img img"
               src="./images/examples/beard-2.jpg"
               alt="beard"
               width="270"
               height="360"
             />
           </li>
-          <li>
+          <li class="gallery-items">
             <img
+              class="gallery-img img"
               src="./images/examples/mustache-3.jpg"
               alt="mustache"
               width="270"
               height="360"
             />
           </li>
-          <li>
+          <li class="gallery-items">
             <img
+              class="gallery-img img"
               src="./images/examples/razor-4.jpg"
               alt="razor"
               width="270"
@@ -292,22 +302,22 @@
           </li>
         </ul>
       </section>
-      <!-----------------------------------------!!!!Online-booking!!!! -->
-      <section>
-        <h2>Online-booking</h2>
-        <p>Name*</p>
-        <p>Phone*</p>
-        <p>Message</p>
-        <button>send</button>
+      <!-------------------- !!!!Online-booking!!!! -->
+      <section class="booking">
+        <h2 class="booking-title">Online-booking</h2>
+        <p class="booking-input">Name*</p>
+        <p class="booking-input">Phone*</p>
+        <p class="booking-input">Message</p>
+        <button class="modal-btn btn">send</button>
       </section>
-      <!-- ----------------------------------------Contacts -->
+      <!-------------------- Contacts -->
       <section id="contacts">
-        <h2>Contacts</h2>
-        <address class="adr">
-          <ul class="contact-list list">
-            <li>
+        <h2 class="contacts-title">Contacts</h2>
+        <address class="contacts-address">
+          <ul class="contacts-list list">
+            <li class="contacts-item">
               <a
-                class="link"
+                class="contacts-link link"
                 href="https://maps.app.goo.gl/fmCrEodEmpCPxJ8r9"
                 target="_blank"
                 rel="noopener noreffever"
@@ -315,24 +325,30 @@
                 Kyiv, 08132</a
               >
             </li>
-            <li>
-              <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <li class="contacts-item">
+              <a class="contacts-link link" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
             </li>
-            <li>
-              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+            <li class="contacts-item">
+              <a
+                class="contacts-link contacts-mail"
+                href="mailto:barbershop@email.com"
+                >barbershop@email.com</a
+              >
             </li>
           </ul>
         </address>
-        <h3>Working hours</h3>
-        <p>
+        <h3 class="contacts-undertitle">Working hours</h3>
+        <p class="contacts-schedule">
           Every day from <time datetime="09:00">9:00</time> to
           <time datetime="22:00">22:00</time>
         </p>
       </section>
     </main>
-    <!------------------------------------------Footer -->
-    <footer>
-      <p>&#169; Copyright 2020</p>
+    <!-------------------- Footer -->
+    <footer class="footer">
+      <p class="footer-copyright">&#169; Copyright 2020</p>
       <ul class="media-list list">
         <li class="media-list-item">
           <a
