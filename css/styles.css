@@ -81,15 +81,21 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
   color: var(--secondary-text-color-theme-dark);
   background-color: transparent;
+  border-radius: 25px;
+  border: 2px solid var(--accent-color);
 }
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color-theme-dark);
 }
-.btn {
+.modal-btn-theme-dark {
+}
+.modal-btn-theme-light {
+  color: var(--secondary-text-color-theme-light);
 }
 /* ============================================/Header============== */
 
