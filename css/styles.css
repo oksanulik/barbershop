@@ -661,3 +661,32 @@ button {
 }
   додати до a display:block та padding
 */
+.test-list {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+.test-item {
+  position: relative;
+  outline: 2px solid red;
+}
+.test-item:hover .test-link {
+  background-color: #1da13c;
+}
+.test-link {
+  display: block;
+  padding: 15px;
+  background-color: teal;
+}
+.submenu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  padding: 10px;
+  background-color: tomato;
+  display: none;
+}
+.test-item:hover .submenu {
+  display: block;
+}
