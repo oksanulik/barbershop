@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Best barbershop in your city">
     <title>Barbershop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,45 +11,73 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--==================================== Header -->
+    <div class="project">
+      <!--====================================== Header DONE-->
     <header class="header section">
       <div class="container header-container">
-        <nav class="header-nav">
-          <a class="header-logo logo link" href="">
-            <svg class="header-img" width="69" height="55">
-              <use href="./images/sprite.svg#icon-logo"></use>
-            </svg>
-          </a>
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="header-link link" href="#about">About</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="#price">Services and prices</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="#team">Barbers</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="#contacts">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="header-contact link" href="tel:+380441111111"
-          >+38 044 111 11 11</a
+        <a class="header-logo logo link" href="">
+          <svg class="header-logo-img" width="69" height="55">
+            <use href="./images/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+          <nav class="header-nav">
+            <ul class="header-list list">
+              <li class="header-item">
+                <a class="header-link link current" href="#about">About</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link link" href="#price">Services and prices</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link link" href="#team">Barbers</a>
+              </li>
+              <li class="header-item">
+                <a class="header-link link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header-contact link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="modal-btn header-modal-btn" type="button" data-modal-open>Online-booking</button>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
         >
-        <button class="modal-btn" type="button">Online-booking</button>
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
-      <!--==================================== Hero -->
+      <!--==================================== Hero DONE-->
       <section class="hero">
         <div class="container hero-container">
           <div class="hero-left-side">
@@ -58,17 +87,16 @@
                   class="media-list-link link"
                   href="./example.html"
                   target="_blank"
-                  rel="noopener noreffever"
+                  rel="noopener noreferrer"
                   >Instagram</a
                 >
-                <!-- https://www.instagram.com/ -->
               </li>
               <li class="media-list-item">
                 <a
                   class="media-list-link link"
                   href="https://www.youtube.com/"
                   target="_blank"
-                  rel="noopener noreffever"
+                  rel="noopener noreferrer"
                   >Youtube</a
                 >
               </li>
@@ -83,10 +111,6 @@
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
-            <!-- <ul class="list">
-            <li><button type="button">Back</button></li>
-            <li><button type="button">Forward</button></li>
-          </ul> -->
           </div>
         </div>
       </section>
@@ -95,22 +119,55 @@
         <div class="container about-left-right">
           <ul class="about-list list">
             <li class="about-item">
-              <img
-                class="about-img"
+              <picture>
+                <source
+                srcset="./images/about/img-1-w.webp 1x, ./images/about/img-1-2x-w.webp 2x" 
+                media="(min-width: 1200px)"
+                type="image/webp">
+                <source
+                srcset="./images/about/img-1.jpg 1x, ./images/about/img-1-2x.jpg 2x" 
+                media="(min-width: 1200px)">
+                <source
+                srcset="./images/about/img-1-tablet-1x-w.webp 1x, ./images/about/img-1-tablet-2x-w.webp 2x" 
+                media="(min-width: 768px)"
+                type="image/webp">
+                <source
+                srcset="./images/about/img-1-tablet-1x.jpg 1x, ./images/about/img-1-tablet-2x.jpg 2x" 
+                media="(min-width: 768px)">
+                <img
+                class="about-img img"
                 src="./images/about/img-1.jpg"
                 alt="Beard trim"
                 width="270"
                 height="445"
               />
+              </picture>
+              
             </li>
             <li class="about-item">
-              <img
-                class="about-img"
-                src="./images/about/img-2.jpg"
-                alt="Straight razor shave"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                srcset="./images/about/img-2-w.webp 1x, ./images/about/img-2-2x-w.webp 2x" 
+                media="(min-width: 1200px)"
+                type="image/webp">
+                <source
+                srcset="./images/about/img-2.jpg 1x, ./images/about/img-2-2x.jpg 2x" 
+                media="(min-width: 1200px)">
+                <source
+                srcset="./images/about/img-2-tablet-1x-w.webp 1x, ./images/about/img-2-tablet-2x-w.webp 2x" 
+                media="(min-width: 768px)"
+                type="image/webp">
+                <source
+                srcset="./images/about/img-2-tablet-1x.jpg 1x, ./images/about/img-2-tablet-2x.jpg 2x" 
+                media="(min-width: 768px)">
+                <img
+                  class="about-img img"
+                  src="./images/about/img-2.jpg"
+                  alt="Straight razor shave"
+                  width="270"
+                  height="445"
+                />
+              </picture>
             </li>
           </ul>
           <div class="about-right-side">
@@ -136,14 +193,14 @@
         </div>
       </section>
       <!--==================================== Price -->
-      <section class="price section" id="price">
+      <!-- <section class="price section" id="price">
         <div class="container">
           <p class="uppertitle uppertitle-theme-dark">
             Spend your time with the best masters
           </p>
           <h2 class="price-text">Services and prices</h2>
           <ul class="price-main-list list">
-            <li class="price-main-item price-left">
+            <li class="price-main-item price-left" data-aos="fade-right" data-aos-duration="800">
               <ul class="price-list list">
                 <li class="price-item">
                   <span class="price-item-service">Men’s haircut</span> from 300
@@ -163,7 +220,7 @@
                 </li>
               </ul>
             </li>
-            <li class="price-main-item price-right">
+            <li class="price-main-item price-right" data-aos="fade-left" data-aos-duration="800">
               <ul class="price-list list">
                 <li class="price-item">
                   <span class="price-item-service">Trainee’s haircut</span> from
@@ -190,48 +247,29 @@
               </ul>
             </li>
           </ul>
-          <!-- <table>
-          <tr>
-            <td>Trainee’s haircut</td>
-            <td>from 50 uah.</td>
-          </tr>
-          <tr>
-            <td>Haircut under the nozzle</td>
-            <td>from 200 uah.</td>
-          </tr>
-          <tr>
-            <td>Children’s haircut (0-12 y.o.)</td>
-            <td>from 300 uah.</td>
-          </tr>
-          <tr>
-            <td>Camouflage of gray hair</td>
-            <td>from 200 uah.</td>
-          </tr>
-        </table> -->
-
           <button class="modal-btn price-button" type="button">
             Online-booking
           </button>
         </div>
-      </section>
+      </section> -->
       <!--==================================== Advantages -->
-      <section class="advant section">
+      <!-- <section class="advant section">
         <div class="container advant-left-right">
           <div class="advant-left">
             <ul class="advant-list list">
-              <li class="advant-item">
+              <li class="advant-item" data-aos="flip-down" data-aos-delay="300" data-aos-duration="800">
                 <p class="advant-quantity">600</p>
                 <p class="advant-descr">Satisfied customers per day</p>
               </li>
-              <li class="advant-item">
+              <li class="advant-item" data-aos="flip-down" data-aos-delay="600" data-aos-duration="800">
                 <p class="advant-quantity">50</p>
                 <p class="advant-descr">Awards for excellent service</p>
               </li>
-              <li class="advant-item">
+              <li class="advant-item" data-aos="flip-down" data-aos-delay="900" data-aos-duration="800">
                 <p class="advant-quantity">20</p>
                 <p class="advant-descr">Kyiv’s best barbers</p>
               </li>
-              <li class="advant-item">
+              <li class="advant-item" data-aos="flip-down" data-aos-delay="1200" data-aos-duration="800">
                 <p class="advant-quantity">100</p>
                 <p class="advant-descr">Gifts for regular customers</p>
               </li>
@@ -248,9 +286,9 @@
             </p>
           </div>
         </div>
-      </section>
-      <!--==================================== Team DONE-->
-      <section class="team section" id="team">
+      </section> -->
+      <!--==================================== Team -->
+      <!-- <section class="team section" id="team">
         <div class="container">
           <p class="uppertitle uppertitle-theme-light">
             For true enjoyers of the atmosphere
@@ -258,13 +296,40 @@
           <h2 class="team-title">Our barbers</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/team/john-smith.jpg"
-                alt="John Smith"
-                width="370"
-                height="346"
-              />
+              <div class="team-box">
+                <picture>
+                  <source
+                  srcset="./images/team/john-smith-w.webp 1x, ./images/team/john-smith-2x-w.webp 2x" 
+                  media="(min-width: 1200px)"
+                  type="image/webp">
+                  <source
+                  srcset="./images/team/john-smith.jpg 1x, ./images/team/john-smith-2x.jpg 2x" 
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./images/team/john-smith-tablet-1x-w.webp 1x, ./images/team/john-smith-tablet-2x-w.webp 2x" 
+                  media="(min-width: 768px)"
+                  type="image/webp">
+                  <source
+                  srcset="./images/team/john-smith-tablet-1x.jpg 1x, ./images/team/john-smith-tablet-2x.jpg 2x" 
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/team/john-smith-mobile-1x-w.webp 1x, ./images/team/john-smith-mobile-2x-w.webp 2x" 
+                  media="(min-width: 480px)"
+                  type="image/webp">
+                  <source
+                  srcset="./images/team/john-smith-mobile-1x.jpg 1x, ./images/team/john-smith-mobile-2x.jpg 2x" 
+                  media="(min-width: 480px)">
+                  <img
+                  class="team-img"
+                  src="./images/team/john-smith.jpg"
+                  alt="John Smith"
+                  width="370"
+                  height="346"/>
+                </picture>
+              <div class="overlay">
+                <p class="overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatum, at eligendi, inventore soluta quidem, quas accusamus molestiae incidunt tempore doloribus est reprehenderit adipisci eaque repellat similique obcaecati ipsa deleniti.</p>
+              </div>
+              </div>
               <div class="team-card-wrapper">
                 <h3 class="team-subtitle">John Smith</h3>
                 <p class="team-subtext">Extreme Barber</p>
@@ -274,7 +339,7 @@
                       class="socials-link"
                       href="https://www.instagram.com/"
                       target="_blank"
-                      rel="noopener noreffever"
+                      rel="noopener noreferrer"
                       aria-label="Instagram icon"
                     >
                       <svg class="social-icon" width="20" height="20">
@@ -287,7 +352,7 @@
                       class="socials-link"
                       href="https://x.com/"
                       target="_blank"
-                      rel="noopener noreffever"
+                      rel="noopener noreferrer"
                       aria-label="Twitter icon"
                     >
                       <svg class="social-icon" width="20" height="20">
@@ -300,7 +365,7 @@
                       class="socials-link"
                       href="https://www.facebook.com/"
                       target="_blank"
-                      rel="noopener noreffever"
+                      rel="noopener noreferrer"
                       aria-label="Facebook icon"
                     >
                       <svg class="social-icon" width="20" height="20">
@@ -313,7 +378,7 @@
                       class="socials-link"
                       href="https://www.linkedin.com/"
                       target="_blank"
-                      rel="noopener noreffever"
+                      rel="noopener noreferrer"
                       aria-label="Linkedin icon"
                     >
                       <svg class="social-icon" width="20" height="20">
@@ -325,13 +390,40 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/team/michele-doe.jpg"
-                alt="Michele Doe"
-                width="370"
-                height="346"
-              />
+              <div class="team-box">
+                <picture>
+                  <source
+                  srcset="./images/team/michele-doe-w.webp 1x, ./images/team/michele-doe-2x-w.webp 2x" 
+                  media="(min-width: 1200px)"
+                  type="image/webp">
+                  <source
+                  srcset="./images/team/michele-doe.jpg 1x, ./images/team/michele-doe-2x.jpg 2x" 
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./images/team/michele-doe-tablet-1x-w.webp 1x, ./images/team/michele-doe-tablet-2x-w.webp 2x" 
+                  media="(min-width: 768px)"
+                  type="image/webp">
+                  <source
+                  srcset="./images/team/michele-doe-tablet-1x.jpg 1x, ./images/team/michele-doe-tablet-2x.jpg 2x" 
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/team/michele-doe-mobile-1x-w.webp 1x, ./images/team/michele-doe-mobile-2x-w.webp 2x" 
+                  media="(min-width: 480px)"
+                  type="image/webp">
+                  <source
+                  srcset="./images/team/michele-doe-mobile-1x.jpg 1x, ./images/team/michele-doe-mobile-2x.jpg 2x" 
+                  media="(min-width: 480px)">
+                  <img
+                  class="team-img"
+                  src="./images/team/michele-doe.jpg"
+                  alt="Michele Doe"
+                  width="370"
+                  height="346"/>
+                </picture>
+              <div class="overlay">
+                <p class="overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatum, at eligendi, inventore soluta quidem, quas accusamus molestiae incidunt tempore doloribus est reprehenderit adipisci eaque repellat similique obcaecati ipsa deleniti.</p>
+              </div>
+              </div>
               <div class="team-card-wrapper">
                 <h3 class="team-subtitle">Michele Doe</h3>
                 <p class="team-subtext">Extreme Barber</p>
@@ -341,7 +433,7 @@
                       class="socials-link"
                       href="https://www.instagram.com/"
                       target="_blank"
-                      rel="noopener noreffever"
+                      rel="noopener noreferrer"
                       aria-label="Instagram icon"
                     >
                       <svg class="social-icon" width="20" height="20">
@@ -354,7 +446,7 @@
                       class="socials-link"
                       href="https://x.com/"
                       target="_blank"
-                      rel="noopener noreffever"
+                      rel="noopener noreferrer"
                       aria-label="Twitter icon"
                     >
                       <svg class="social-icon" width="20" height="20">
@@ -367,7 +459,7 @@
                       class="socials-link"
                       href="https://www.facebook.com/"
                       target="_blank"
-                      rel="noopener noreffever"
+                      rel="noopener noreferrer"
                       aria-label="Facebook icon"
                     >
                       <svg class="social-icon" width="20" height="20">
@@ -380,7 +472,7 @@
                       class="socials-link"
                       href="https://www.linkedin.com/"
                       target="_blank"
-                      rel="noopener noreffever"
+                      rel="noopener noreferrer"
                       aria-label="Linkedin icon"
                     >
                       <svg class="social-icon" width="20" height="20">
@@ -392,13 +484,40 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/team/alan-black.jpg"
-                alt="Alan Black"
-                width="370"
-                height="346"
-              />
+              <div class="team-box">
+                <picture>
+                  <source
+                  srcset="./images/team/alan-black-w.webp 1x, ./images/team/alan-black-2x-w.webp 2x" 
+                  media="(min-width: 1200px)"
+                  type="image/webp">
+                  <source
+                  srcset="./images/team/alan-black.jpg 1x, ./images/team/alan-black-2x.jpg 2x" 
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./images/team/alan-black-tablet-1x-w.webp 1x, ./images/team/alan-black-tablet-2x-w.webp 2x" 
+                  media="(min-width: 768px)"
+                  type="image/webp">
+                  <source
+                  srcset="./images/team/alan-black-tablet-1x.jpg 1x, ./images/team/alan-black-tablet-2x.jpg 2x" 
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/team/alan-black-mobile-1x-w.webp 1x, ./images/team/alan-black-mobile-2x-w.webp 2x" 
+                  media="(min-width: 480px)"
+                  type="image/webp">
+                  <source
+                  srcset="./images/team/alan-black-mobile-1x.jpg 1x, ./images/team/alan-black-mobile-2x.jpg 2x" 
+                  media="(min-width: 480px)">
+                  <img
+                  class="team-img"
+                  src="./images/team/alan-black.jpg"
+                  alt="Alan Black"
+                  width="370"
+                  height="346"/>
+                </picture>
+              <div class="overlay">
+                <p class="overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatum, at eligendi, inventore soluta quidem, quas accusamus molestiae incidunt tempore doloribus est reprehenderit adipisci eaque repellat similique obcaecati ipsa deleniti.</p>
+              </div>
+              </div>
               <div class="team-card-wrapper">
                 <h3 class="team-subtitle">Alan Black</h3>
                 <p class="team-subtext">Extreme Barber</p>
@@ -408,7 +527,7 @@
                       class="socials-link"
                       href="https://www.instagram.com/"
                       target="_blank"
-                      rel="noopener noreffever"
+                      rel="noopener noreferrer"
                       aria-label="Instagram icon"
                     >
                       <svg class="social-icon" width="20" height="20">
@@ -421,7 +540,7 @@
                       class="socials-link"
                       href="https://x.com/"
                       target="_blank"
-                      rel="noopener noreffever"
+                      rel="noopener noreferrer"
                       aria-label="Twitter icon"
                     >
                       <svg class="social-icon" width="20" height="20">
@@ -434,7 +553,7 @@
                       class="socials-link"
                       href="https://www.facebook.com/"
                       target="_blank"
-                      rel="noopener noreffever"
+                      rel="noopener noreferrer"
                       aria-label="Facebook icon"
                     >
                       <svg class="social-icon" width="20" height="20">
@@ -447,7 +566,7 @@
                       class="socials-link"
                       href="https://www.linkedin.com/"
                       target="_blank"
-                      rel="noopener noreffever"
+                      rel="noopener noreferrer"
                       aria-label="Linkedin icon"
                     >
                       <svg class="social-icon" width="20" height="20">
@@ -460,65 +579,134 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!--==================================== Gallery DONE-->
-      <section class="gallery section">
+      </section> -->
+      <!--==================================== Gallery -->
+      <!-- <section class="gallery section">
         <div class="container">
-          <h2 hidden>Our works</h2>
+          <h2 class="visually-hidden">Our works</h2>
           <p class="uppertitle uppertitle-more uppertitle-theme-light">
             In Latin, "barba" means "beard"
           </p>
           <ul class="gallery-list list">
-            <li class="gallery-items">
-              <img
-                class="gallery-img"
-                src="./images/examples/haircut-1.jpg"
-                alt="haircut"
-                width="270"
-                height="360"
-              />
+            <li class="gallery-items" data-aos="zoom-in-right" data-aos-delay="300">
+              <picture>
+                <source
+                  srcset="./images/examples/haircut-1.jpg 1x, ./images/examples/haircut-1-2x.jpg 2x" 
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./images/examples/haircut-1-tablet-1x.jpg 1x, ./images/examples/haircut-1-tablet-2x.jpg 2x" 
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/examples/haircut-1-mobile-1x.jpg 1x, ./images/examples/haircut-1-mobile-2x.jpg 2x" 
+                  media="(min-width: 480px)">
+                <img
+                  class="gallery-img"
+                  src="./images/examples/haircut-1.jpg"
+                  alt="haircut"
+                  width="270"
+                  height="360"
+                />
+              </picture>
             </li>
-            <li class="gallery-items">
-              <img
-                class="gallery-img"
-                src="./images/examples/beard-2.jpg"
-                alt="beard"
-                width="270"
-                height="360"
-              />
+            <li class="gallery-items" data-aos="zoom-in-right" data-aos-delay="600">
+              <picture>
+                <source
+                  srcset="./images/examples/beard-2.jpg 1x, ./images/examples/beard-2-2x.jpg 2x" 
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./images/examples/beard-2-tablet-1x.jpg 1x, ./images/examples/beard-2-tablet-2x.jpg 2x" 
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/examples/beard-2-mobile-1x.jpg 1x, ./images/examples/beard-2-mobile-2x.jpg 2x" 
+                  media="(min-width: 480px)">
+                <img
+                  class="gallery-img"
+                  src="./images/examples/beard-2.jpg"
+                  alt="beard"
+                  width="270"
+                  height="360"
+                />
+              </picture>
             </li>
-            <li class="gallery-items">
-              <img
-                class="gallery-img"
-                src="./images/examples/mustache-3.jpg"
-                alt="mustache"
-                width="270"
-                height="360"
-              />
+            <li class="gallery-items" data-aos="zoom-in-right" data-aos-delay="900">
+              <picture>
+                <source
+                  srcset="./images/examples/mustache-3.jpg 1x, ./images/examples/mustache-3-2x.jpg 2x" 
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./images/examples/mustache-3-tablet-1x.jpg 1x, ./images/examples/mustache-3-tablet-2x.jpg 2x" 
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/examples/mustache-3-mobile-1x.jpg 1x, ./images/examples/mustache-3-mobile-2x.jpg 2x" 
+                  media="(min-width: 480px)">
+                <img
+                  class="gallery-img"
+                  src="./images/examples/mustache-3.jpg"
+                  alt="mustache"
+                  width="270"
+                  height="360"
+                />
+              </picture>
             </li>
-            <li class="gallery-items">
-              <img
-                class="gallery-img"
-                src="./images/examples/razor-4.jpg"
-                alt="razor"
-                width="270"
-                height="360"
-              />
+            <li class="gallery-items" data-aos="zoom-in-right" data-aos-delay="1200">
+              <picture>
+                <source
+                  srcset="./images/examples/razor-4.jpg 1x, ./images/examples/razor-4-2x.jpg 2x" 
+                  media="(min-width: 1200px)">
+                  <source
+                  srcset="./images/examples/razor-4-tablet-1x.jpg 1x, ./images/examples/razor-4-tablet-2x.jpg 2x" 
+                  media="(min-width: 768px)">
+                  <source
+                  srcset="./images/examples/razor-4-mobile-1x.jpg 1x, ./images/examples/razor-4-mobile-2x.jpg 2x" 
+                  media="(min-width: 480px)">
+                <img
+                  class="gallery-img"
+                  src="./images/examples/razor-4.jpg"
+                  alt="razor"
+                  width="270"
+                  height="360"
+                />
+              </picture>
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--==================================== Online-booking -->
-      <div class="booking-contacts">
+      <!-- <div class="booking-contacts">
         <div class="container">
           <section class="booking section">
             <h2 class="booking-title">Online-booking</h2>
-            <p class="booking-input">Name*</p>
-            <p class="booking-input">Phone*</p>
-            <p class="booking-input">Message</p>
-            <button class="modal-btn">send</button>
+            <form class="booking-form">
+              <div class="form-field">
+                <label class="booking-form-label">
+                  <input 
+                    class="booking-form-input" 
+                    type="text" 
+                    name="user-name" 
+                    autocomplete="name"
+                    required/>
+                  <span class="booking-desc">Name*</span> 
+                </label>
+                <label class="booking-form-label">
+                  <input 
+                    class="booking-form-input" 
+                    type="tel" 
+                    name="user-tel" 
+                    autocomplete="tel" 
+                    pattern="\+?3?8?0?\d{9}"
+                    title="Введіть коректний номер телефону у форматі +380XXXXXXXXX або 0XXXXXXXXX"
+                    required/>
+                  <span class="booking-desc">Phone*</span>
+                </label>              
+              </div>
+              <textarea 
+              class="booking-comment" 
+              name="comment" 
+              placeholder="Message"
+              rows="6"></textarea>
+              <button class="modal-btn">send</button>
+            </form>
           </section>
-          <!--==================================== Contacts -->
           <section class="contacts section" id="contacts">
             <h2 class="contacts-title">Contacts</h2>
             <address class="contacts-address">
@@ -528,11 +716,11 @@
                     class="contacts-link link"
                     href="https://maps.app.goo.gl/fmCrEodEmpCPxJ8r9"
                     target="_blank"
-                    rel="noopener noreffever"
+                    rel="noopener noreferrer"
                   >
                     <svg class="contacts-icon" width="24" height="24">
                       <use href="./images/sprite.svg#icon-map-pin"></use></svg
-                    >st. Vasilkivska, 7A <br />
+                    >st. Vasilkivska, 7A <br/>
                     Kyiv, 08132</a
                   >
                 </li>
@@ -541,7 +729,7 @@
                     class="contacts-link link"
                     href="tel:+380441111111"
                     target="_blank"
-                    rel="noopener noreffever"
+                    rel="noopener noreferrer"
                     ><svg class="contacts-icon" width="24" height="24">
                       <use href="./images/sprite.svg#icon-phone"></use></svg
                     >+38 044 111 11 11</a
@@ -552,7 +740,7 @@
                     class="contacts-link contacts-mail"
                     href="mailto:barbershop@email.com"
                     target="_blank"
-                    rel="noopener noreffever"
+                    rel="noopener noreferrer"
                     ><svg class="contacts-icon" width="24" height="24">
                       <use href="./images/sprite.svg#icon-mail"></use></svg
                     >barbershop@email.com</a
@@ -567,10 +755,10 @@
             </p>
           </section>
         </div>
-      </div>
+      </div> -->
     </main>
-    <!--==================================== Footer -->
-    <footer class="footer">
+    <!--====================================== Footer -->
+    <!-- <footer class="footer">
       <div class="container footer-flex">
         <p class="footer-copyright">&#169; Copyright 2020</p>
         <ul class="media-list footer-media list">
@@ -579,7 +767,7 @@
               class="media-list-link link"
               href="https://www.instagram.com/"
               target="_blank"
-              rel="noopener noreffever"
+              rel="noopener noreferrer"
               >Instagram</a
             >
           </li>
@@ -588,85 +776,134 @@
               class="media-list-link link"
               href="https://www.youtube.com/"
               target="_blank"
-              rel="noopener noreffever"
+              rel="noopener noreferrer"
               >Youtube</a
             >
           </li>
         </ul>
       </div>
-    </footer>
-    <ul class="test-list list">
-      <li class="test-item">
-        <a href="" class="test-link link">Посуд</a>
-        <ul class="submenu list">
-          <li class="submenu-item">
-            <a href="" class="submenu-link link">Парфуми</a>
-          </li>
-          <li class="submenu-item">
-            <a href="" class="submenu-link link">Косметика</a>
-          </li>
-          <li class="submenu-item">
-            <a href="" class="submenu-link link">Побутова хімія</a>
-          </li>
-        </ul>
-      </li>
-      <li class="test-item">
-        <a href="" class="test-link link">Меблі</a>
-        <ul class="submenu list">
-          <li class="submenu-item">
-            <a href="" class="submenu-link link">Парфуми</a>
-          </li>
-          <li class="submenu-item">
-            <a href="" class="submenu-link link">Косметика</a>
-          </li>
-          <li class="submenu-item">
-            <a href="" class="submenu-link link">Побутова хімія</a>
-          </li>
-        </ul>
-      </li>
-      <li class="test-item">
-        <a href="" class="test-link link">Продукти</a>
-        <ul class="submenu list">
-          <li class="submenu-item">
-            <a href="" class="submenu-link link">Парфуми</a>
-          </li>
-          <li class="submenu-item">
-            <a href="" class="submenu-link link">Косметика</a>
-          </li>
-          <li class="submenu-item">
-            <a href="" class="submenu-link link">Побутова хімія</a>
-          </li>
-        </ul>
-      </li>
-      <li class="test-item">
-        <a href="" class="test-link link">Хімія</a>
+    </footer> -->
+    <!--====================================== Modal -->
+    <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-modal-close-test" data-modal-close>
+          <svg class="modal-close-svg" width="12" height="12">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
 
-        <ul class="submenu list">
-          <li class="submenu-item">
-            <a href="" class="submenu-link link">Парфуми</a>
-          </li>
-          <li class="submenu-item">
-            <a href="" class="submenu-link link">Косметика</a>
-          </li>
-          <li class="submenu-item">
-            <a href="" class="submenu-link link">Побутова хімія</a>
-          </li>
-        </ul>
+      <form class="modal-form">
+        <label class="modal-form-field">
+          <span class="modal-form-inp-desc">Name*</span>
+          <span class="modal-form-input-wrapper">
+            <input 
+          class="modal-form-input" 
+          type="text" 
+          name="user-name"
+          required>
+          <span class="modal-form-input-icon"></span>
+          </span>
+          
+        </label>
+        <label class="modal-form-field">
+          <span class="modal-form-inp-desc">Phone*</span>
+          <span class="modal-form-input-wrapper">
+          <input 
+          class="modal-form-input" 
+          type="tel" 
+          name="user-phone"
+          pattern="\+?3?8?0?\d{9}"
+          title="Введіть коректний номер телефону у форматі +380XXXXXXXXX або 0XXXXXXXXX"
+          required>
+          <span class="modal-form-input-icon"></span>
+          </span>
+        </label>
+        <label class="modal-form-field">
+          <span class="modal-form-inp-desc">Message*</span>
+          <textarea 
+          class="modal-form-comment" 
+          name="user-comment"
+          placeholder="Type the text..."></textarea></label>
+
+        <input id="user-policy" type="checkbox" class="modal-input-check visually-hidden">
+        <label for="user-policy" class="modal-form-check-desc">
+          I agree with the newsletter and&nbsp; <a href="">Terms of the contract</a> 
+        </label>
+
+        <button class="modal-btn modal-btn-theme-light form-button" 
+      type="submit">Send
+      </button>
+      </form>
+        
+      </div>
+    </div> -->
+    <!--====================================== Mobile menu -->
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Services and prices</a></li>
+        <li><a href="" class="link">Barbers</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+      </ul>
+      <a class="modal-contact link" href="tel:+380441111111"
+          >+38 044 111 11 11</a
+        >
+        <button class="modal-btn" type="button" data-modal-open>Online-booking</button>
+    <ul class="media-list list">
+      <li class="media-list-item">
+        <a
+          class="media-list-link link"
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Instagram</a
+        >
+      </li>
+      <li class="media-list-item">
+        <a
+          class="media-list-link link"
+          href="https://www.youtube.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Youtube</a
+        >
       </li>
     </ul>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat a in
-      aperiam aliquid voluptatem vitae quam assumenda ullam nobis illo ad,
-      dolores quidem eveniet eius autem excepturi fugit velit reprehenderit.
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat a in
-      aperiam aliquid voluptatem vitae quam assumenda ullam nobis illo ad,
-      dolores quidem eveniet eius autem excepturi fugit velit reprehenderit.
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat a in
-      aperiam aliquid voluptatem vitae quam assumenda ullam nobis illo ad,
-      dolores quidem eveniet eius autem excepturi fugit velit reprehenderit.
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat a in
-      aperiam aliquid voluptatem vitae quam assumenda ullam nobis illo ad,
-      dolores quidem eveniet eius autem excepturi fugit velit reprehenderit.
-    </p>
+    </div>     -->
+    <!--====================================== JS -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/modal.js"></script>  
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const htmlElement = document.documentElement;
+        const computedStyle = window.getComputedStyle(htmlElement);
+        console.log('Ширина елемента <html>: ', computedStyle.width); // Виведе обчислену ширину елемента <html>
+      });
+    </script> -->
+    <!-- <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script> -->
+    </div>         
   </body>
 </html>
