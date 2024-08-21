@@ -1259,6 +1259,12 @@ color: var(--primary-text-color-theme-dark);
 .contacts-mail {
   text-decoration-skip-ink: none;
 }
+.contacts-uppertitle {
+  color: var(--secondary-text-color-theme-dark);
+}
+.contacts > .uppertitle-theme-dark::before {
+  background-color: var(--secondary-text-color-theme-dark);
+}
 .contacts-schedule {
   font-size: 18px;
   line-height: 1.67;
