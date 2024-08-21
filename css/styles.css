@@ -67,8 +67,13 @@ button {
   padding-top: 84px;
   padding-bottom: 84px;
   outline: solid rgb(255, 162, 0) 2px;
+<<<<<<< HEAD
 }
 @media screen and (min-width: 768px) {
+=======
+  }
+ @media screen and (min-width: 768px) {
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
   .section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -76,8 +81,13 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .section {
+<<<<<<< HEAD
     padding-top: 120px;
     padding-bottom: 120px;
+=======
+  padding-top: 120px;
+  padding-bottom: 120px;
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
   }
 }
 .container {
@@ -92,12 +102,20 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container {
+<<<<<<< HEAD
     max-width: 720px;
+=======
+  max-width: 720px;
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
+<<<<<<< HEAD
     max-width: 1200px;
+=======
+  max-width: 1200px;
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
   }
 }
 /* =============================================Components========== */
@@ -269,7 +287,11 @@ button {
 .header-link::after {
   display: block;
   position: absolute;
+<<<<<<< HEAD
   content: '';
+=======
+  content: "";
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
   left: 0;
   bottom: 0;
   width: 100%;
@@ -284,7 +306,11 @@ button {
   color: var(--accent-color);
 }
 .header-link.current::after,
+<<<<<<< HEAD
 .header-link:hover::after,
+=======
+.header-link:hover::after, 
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
 .header-link:focus::after {
   background-color: var(--accent-color);
 }
@@ -293,6 +319,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .header-contact {
+<<<<<<< HEAD
     display: block;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -303,6 +330,18 @@ button {
     color: var(--secondary-text-color-theme-dark);
     margin-right: 43px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+=======
+  display: block;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--secondary-text-color-theme-dark);
+  margin-right: 43px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
   }
 }
 .header-contact:hover,
@@ -312,6 +351,7 @@ button {
 /* ============================================/Header============== */
 
 /* =============================================Hero DONE================ */
+<<<<<<< HEAD
 @media screen and (max-width: 480.98px) {
   .hero {
     background-image: linear-gradient(
@@ -359,13 +399,20 @@ button {
         url(../images/hero/hero-bg-tablet-2x.jpg);
     }
   }
+=======
+.hero {
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
 }
 .hero-container {
   display: flex;
 }
 .hero-left-side {
   display: none;
+<<<<<<< HEAD
 }
+=======
+  }
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
 @media screen and (min-width: 768px) {
   .hero-left-side {
     display: flex;
@@ -404,6 +451,7 @@ button {
   padding-top: 208px;
   padding-bottom: 209px;
   padding-left: 31px;
+<<<<<<< HEAD
 }
 @media screen and (min-width: 768px) {
   .hero-right-side {
@@ -429,6 +477,28 @@ button {
         ),
         url(../images/hero/hero-bg-2x.jpg);
     }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-right-side {
+    padding-bottom: 208px;
+  }
+=======
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../images/hero/hero-bg.jpg);
+  background-size: cover;
+  background-color: #303030;
+  flex-grow: 1;
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
+}
+@media screen and (min-width: 768px) {
+  .hero-right-side {
+    padding-top: 272px;
+    padding-bottom: 237px;
+    padding-left: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -474,7 +544,11 @@ button {
 }
 /* ============================================/Hero================ */
 
+<<<<<<< HEAD
 /* =============================================About DONE=============== */
+=======
+/* =============================================About=============== */
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
 
 @media screen and (min-width: 768px) {
   .about-left-right {
@@ -483,6 +557,7 @@ button {
   }
 }
 .about-list {
+<<<<<<< HEAD
   display: flex;
   gap: 30px;
 }
@@ -494,11 +569,23 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .about-list {
     flex-direction: column;
+=======
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: block;
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
   }
 }
 @media screen and (min-width: 1200px) {
   .about-list {
+<<<<<<< HEAD
     flex-direction: row;
+=======
+    display: flex;
+    gap: 30px;
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
   }
 }
 .about-item {
@@ -511,6 +598,12 @@ button {
 .about-img {
   transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+<<<<<<< HEAD
+=======
+.about-right-side {
+  /* max-width: 418px; */
+}
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
 @media screen and (min-width: 768px) {
   .about-right-side {
     max-width: 330px;
@@ -567,8 +660,13 @@ button {
 }
 /* ============================================/About=============== */
 
+<<<<<<< HEAD
 /* =============================================Price DONE============== */
 .price {
+=======
+/* =============================================Price============== */
+/* .price {
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -678,11 +776,16 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 /* ============================================/Price============== */
 
+<<<<<<< HEAD
 /* =============================================Advantages DONE========== */
 .advant {
+=======
+/* =============================================Advantages========== */
+/* .advant {
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
 }
 .advant-left-right {
   display: flex;
@@ -791,11 +894,16 @@ button {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-light);
-}
+} */
 /* ============================================/Advantages========== */
 
+<<<<<<< HEAD
 /* =============================================Team DONE================ */
 .team {
+=======
+/* =============================================Team================ */
+/* .team {
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
   background-color: var(--background-team-section);
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -828,6 +936,11 @@ button {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
+.team-item:hover .overlay,
+.team-item:focus .overlay {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
 .team-img {
 }
 .team-box {
@@ -849,12 +962,21 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
 
   background-color: rgba(81, 96, 110, 0.236);
   backdrop-filter: blur(5px);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+=======
+   
+  background-color: rgba(81, 96, 110, 0.236);
+  backdrop-filter: blur(5px);
+  
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
 }
 .overlay-text {
   font-size: 16px;
@@ -863,12 +985,15 @@ button {
   text-align: center;
   color: var(--secondary-text-color-theme-dark);
 }
+<<<<<<< HEAD
 @media screen and (max-width: 479.98px) {
   .overlay-text {
     font-size: 14px;
     line-height: 1.67;
   }
 }
+=======
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
 .team-subtitle {
   font-weight: 400;
   font-size: 18px;
@@ -917,11 +1042,19 @@ button {
 .social-icon {
   fill: var(--secondary-text-color-theme-light);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+<<<<<<< HEAD
 }
 /* ============================================/Team================ */
 
 /* =============================================Gallery DONE============ */
 .gallery {
+=======
+} */
+/* ============================================/Team================ */
+
+/* =============================================Gallery============ */
+/* .gallery {
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
 }
 .uppertitle-more {
   margin-bottom: 71px;
@@ -939,6 +1072,7 @@ button {
 .gallery-items {
   width: 100%;
 }
+<<<<<<< HEAD
 @media screen and (min-width: 768px) {
   .gallery-items {
     width: calc((100% - 30px) / 2);
@@ -1074,6 +1208,13 @@ button {
     margin-left: auto;
   }
 }
+=======
+.gallery-img {
+} */
+/* ============================================/Gallery============ */
+
+/* =============================================Online-booking====== */
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
 /* .booking {
   width: 570px;
 }
@@ -1187,6 +1328,7 @@ color: var(--primary-text-color-theme-dark);
 /* ============================================/Online-booking====== */
 
 /* =============================================Contacts============ */
+<<<<<<< HEAD
 .contacts {
   max-width: 100%;
 }
@@ -1250,6 +1392,8 @@ color: var(--primary-text-color-theme-dark);
 .contacts-icon {
   align-content: center;
 }
+=======
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
 /* .contacts {
   width: 570px;
   padding-left: 100px;
@@ -1298,8 +1442,13 @@ color: var(--primary-text-color-theme-dark);
 } */
 /* ============================================/Contacts============ */
 
+<<<<<<< HEAD
 /* =============================================Footer DONE============== */
 .footer {
+=======
+/* =============================================Footer============== */
+/* .footer {
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
   padding-top: 56px;
   padding-bottom: 56px;
 }
@@ -1320,7 +1469,7 @@ color: var(--primary-text-color-theme-dark);
 }
 .footer-media {
   margin-left: auto;
-}
+} */
 /* ============================================/Footer============== */
 /* .backdrop {
   position: fixed;
@@ -1476,8 +1625,13 @@ color: var(--primary-text-color-theme-dark);
 .modal-input-check:focus + .modal-form-check-desc::before {
   border: 2px solid #355c7d;
 } */
+<<<<<<< HEAD
 /* =============================================Mobile menu===== === */
 .menu-toggle {
+=======
+ /* =============================================Mobile menu===== === */
+ .menu-toggle {
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -1534,6 +1688,10 @@ color: var(--primary-text-color-theme-dark);
   padding: 10px;
   color: #fff;
   text-decoration: none;
+<<<<<<< HEAD
 }
 
 /* xnview - для конвертації*/
+=======
+}
+>>>>>>> a3697788449a3b5ee3a590f31af2b7cd3080ea7f
