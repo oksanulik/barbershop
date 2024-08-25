@@ -981,15 +981,35 @@ button {
   color: var(--secondary-text-color-theme-dark);
   margin-bottom: 44px;
 }
+@media screen and (max-width: 479.98px) {
+  .booking-title {
+    font-size: 34px;
+  }
+}
 .booking-contacts {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../images/contacts/contacts-bg.png);
   background-color: #191c26;
+  background-image: url(../images/contacts/contacts-bg.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center left calc(50% + 406px);
+  background-size: cover;
+  background-position: center calc(557px);
+}
+@media screen and (min-width: 480px) {
+  .booking-contacts {
+    background-position: center calc(566px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .booking-contacts {
+    background-position: center calc(532px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking-contacts {
+    background-position: center left calc(50% + 406px);
+  }
 }
 @media screen and (min-width: 1200px) {
   .booking-contacts .container {
@@ -1207,6 +1227,10 @@ color: var(--primary-text-color-theme-dark);
 /* =============================================Contacts============ */
 .contacts {
   max-width: 100%;
+  /* background-image: url(../images/contacts/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-position: center left calc(50% + 406px); */
 }
 @media screen and (min-width: 1200px) {
   .contacts {
@@ -1217,6 +1241,11 @@ color: var(--primary-text-color-theme-dark);
 .contacts.section {
   padding-bottom: 110px;
 }
+@media screen and (max-width: 479.98px) {
+  .contacts-title {
+    font-size: 34px;
+  }
+}
 .contacts-title {
   font-family: 'Raleway', sans-serif;
   font-size: 42px;
@@ -1224,12 +1253,26 @@ color: var(--primary-text-color-theme-dark);
   color: var(--secondary-text-color-theme-dark);
   margin-bottom: 44px;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 479.98px) {
+  .contacts-title {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
   .contacts-title {
     padding-left: 100px;
   }
 }
-.contacts-address {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts-wrapper {
+    display: flex;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts-address {
+    width: 330px;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .contacts-list {
@@ -1256,14 +1299,23 @@ color: var(--primary-text-color-theme-dark);
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
 }
+.contacts-link-adress {
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .contacts-adress {
+    width: 180px;
+  }
+}
+.contacts-icon {
+  width: 24px;
+  height: 24px;
+}
 .contacts-mail {
   text-decoration-skip-ink: none;
 }
 .contacts-uppertitle {
   color: var(--secondary-text-color-theme-dark);
-}
-.contacts > .uppertitle-theme-dark::before {
-  background-color: var(--secondary-text-color-theme-dark);
 }
 .contacts-schedule {
   font-size: 18px;
