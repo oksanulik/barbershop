@@ -11,10 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -994,108 +990,120 @@
         </div>
       </footer>
       <!--====================================== Modal -->
-      <!-- <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="btn-modal-close-test" data-modal-close>
-          <svg class="modal-close-svg" width="12" height="12">
-            <use href="./images/sprite.svg#icon-close"></use>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="btn-modal-close-test" data-modal-close>
+            <svg class="modal-close-svg" width="12" height="12">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <form class="modal-form">
+            <label class="modal-form-field">
+              <span class="modal-form-inp-desc">Name*</span>
+              <span class="modal-form-input-wrapper">
+                <input
+                  class="modal-form-input"
+                  type="text"
+                  name="user-name"
+                  required
+                />
+                <span class="modal-form-input-icon"></span>
+              </span>
+            </label>
+            <label class="modal-form-field">
+              <span class="modal-form-inp-desc">Phone*</span>
+              <span class="modal-form-input-wrapper">
+                <input
+                  class="modal-form-input"
+                  type="tel"
+                  name="user-phone"
+                  pattern="\+?3?8?0?\d{9}"
+                  title="Введіть коректний номер телефону у форматі +380XXXXXXXXX або 0XXXXXXXXX"
+                  required
+                />
+                <span class="modal-form-input-icon"></span>
+              </span>
+            </label>
+            <label class="modal-form-field">
+              <span class="modal-form-inp-desc">Message*</span>
+              <textarea
+                class="modal-form-comment"
+                name="user-comment"
+                placeholder="Type the text..."
+              ></textarea>
+            </label>
+
+            <input
+              id="user-policy"
+              type="checkbox"
+              class="modal-input-check visually-hidden"
+            />
+            <label for="user-policy" class="modal-form-check-desc">
+              I agree with the newsletter and&nbsp;
+              <a href="">Terms of the contract</a>
+            </label>
+
+            <button
+              class="modal-btn modal-btn-theme-light form-button"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+      <!--====================================== Mobile menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
           </svg>
         </button>
 
-      <form class="modal-form">
-        <label class="modal-form-field">
-          <span class="modal-form-inp-desc">Name*</span>
-          <span class="modal-form-input-wrapper">
-            <input 
-          class="modal-form-input" 
-          type="text" 
-          name="user-name"
-          required>
-          <span class="modal-form-input-icon"></span>
-          </span>
-          
-        </label>
-        <label class="modal-form-field">
-          <span class="modal-form-inp-desc">Phone*</span>
-          <span class="modal-form-input-wrapper">
-          <input 
-          class="modal-form-input" 
-          type="tel" 
-          name="user-phone"
-          pattern="\+?3?8?0?\d{9}"
-          title="Введіть коректний номер телефону у форматі +380XXXXXXXXX або 0XXXXXXXXX"
-          required>
-          <span class="modal-form-input-icon"></span>
-          </span>
-        </label>
-        <label class="modal-form-field">
-          <span class="modal-form-inp-desc">Message*</span>
-          <textarea 
-          class="modal-form-comment" 
-          name="user-comment"
-          placeholder="Type the text..."></textarea></label>
-
-        <input id="user-policy" type="checkbox" class="modal-input-check visually-hidden">
-        <label for="user-policy" class="modal-form-check-desc">
-          I agree with the newsletter and&nbsp; <a href="">Terms of the contract</a> 
-        </label>
-
-        <button class="modal-btn modal-btn-theme-light form-button" 
-      type="submit">Send
-      </button>
-      </form>
-        
-      </div>
-    </div> -->
-      <!--====================================== Mobile menu -->
-      <!-- <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Services and prices</a></li>
-        <li><a href="" class="link">Barbers</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-      </ul>
-      <a class="modal-contact link" href="tel:+380441111111"
+        <ul class="mobile-menu">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Services and prices</a></li>
+          <li><a href="" class="link">Barbers</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+        </ul>
+        <a class="modal-contact link" href="tel:+380441111111"
           >+38 044 111 11 11</a
         >
-        <button class="modal-btn" type="button" data-modal-open>Online-booking</button>
-    <ul class="media-list list">
-      <li class="media-list-item">
-        <a
-          class="media-list-link link"
-          href="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Instagram</a
-        >
-      </li>
-      <li class="media-list-item">
-        <a
-          class="media-list-link link"
-          href="https://www.youtube.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Youtube</a
-        >
-      </li>
-    </ul>
-    </div>     -->
+        <button class="modal-btn" type="button" data-modal-open>
+          Online-booking
+        </button>
+        <ul class="media-list list">
+          <li class="media-list-item">
+            <a
+              class="media-list-link link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="media-list-item">
+            <a
+              class="media-list-link link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
       <!--====================================== JS -->
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="./js/modal.js"></script>
